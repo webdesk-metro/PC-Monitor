@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Monitor));
             this.lbl_cpu = new MetroFramework.Controls.MetroLabel();
             this.pCPU = new System.Diagnostics.PerformanceCounter();
@@ -46,6 +46,8 @@
             this.chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.Tab = new MetroFramework.Controls.MetroTabControl();
             this.Computer = new MetroFramework.Controls.MetroTabPage();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.AboutMe = new MetroFramework.Controls.MetroTabPage();
             this.lbl_copyright = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pCPU)).BeginInit();
@@ -102,7 +104,7 @@
             this.progressbar_cpu.Size = new System.Drawing.Size(575, 10);
             this.progressbar_cpu.Style = MetroFramework.MetroColorStyle.Yellow;
             this.progressbar_cpu.TabIndex = 2;
-            this.progressbar_cpu.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.progressbar_cpu.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // progressbar_ram
             // 
@@ -111,7 +113,7 @@
             this.progressbar_ram.Size = new System.Drawing.Size(575, 10);
             this.progressbar_ram.Style = MetroFramework.MetroColorStyle.Yellow;
             this.progressbar_ram.TabIndex = 3;
-            this.progressbar_ram.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.progressbar_ram.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // lbl_percentualCPU
             // 
@@ -158,41 +160,46 @@
             this.chart.BorderlineColor = System.Drawing.Color.DarkGray;
             this.chart.BorderSkin.BorderColor = System.Drawing.Color.DarkGray;
             this.chart.BorderSkin.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea2.AxisX.LabelStyle.ForeColor = System.Drawing.Color.DarkGray;
-            chartArea2.AxisX.LineColor = System.Drawing.Color.DarkGray;
-            chartArea2.AxisX.MajorGrid.LineColor = System.Drawing.Color.DarkGray;
-            chartArea2.AxisX.MajorTickMark.LineColor = System.Drawing.Color.DarkGray;
-            chartArea2.AxisX.MinorGrid.LineColor = System.Drawing.Color.DarkGray;
-            chartArea2.AxisX.MinorTickMark.LineColor = System.Drawing.Color.DarkGray;
-            chartArea2.AxisX.TitleForeColor = System.Drawing.Color.DarkGray;
-            chartArea2.AxisX2.LineColor = System.Drawing.Color.DarkGray;
-            chartArea2.AxisX2.TitleForeColor = System.Drawing.Color.DarkGray;
-            chartArea2.AxisY.LabelStyle.ForeColor = System.Drawing.Color.DarkGray;
-            chartArea2.AxisY.LineColor = System.Drawing.Color.DarkGray;
-            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.DarkGray;
-            chartArea2.AxisY.MajorTickMark.LineColor = System.Drawing.Color.DarkGray;
-            chartArea2.AxisY.MinorGrid.LineColor = System.Drawing.Color.DarkGray;
-            chartArea2.AxisY.MinorTickMark.LineColor = System.Drawing.Color.DarkGray;
-            chartArea2.AxisY.TitleForeColor = System.Drawing.Color.DarkGray;
-            chartArea2.AxisY2.LineColor = System.Drawing.Color.DarkGray;
-            chartArea2.AxisY2.TitleForeColor = System.Drawing.Color.DarkGray;
-            chartArea2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            chartArea2.BorderColor = System.Drawing.Color.DarkGray;
-            chartArea2.Name = "ChartArea1";
-            this.chart.ChartAreas.Add(chartArea2);
+            chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.DarkGray;
+            chartArea1.AxisX.LineColor = System.Drawing.Color.DarkGray;
+            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.DarkGray;
+            chartArea1.AxisX.MajorTickMark.LineColor = System.Drawing.Color.DarkGray;
+            chartArea1.AxisX.MinorGrid.LineColor = System.Drawing.Color.DarkGray;
+            chartArea1.AxisX.MinorTickMark.LineColor = System.Drawing.Color.DarkGray;
+            chartArea1.AxisX.TitleForeColor = System.Drawing.Color.DarkGray;
+            chartArea1.AxisX2.LineColor = System.Drawing.Color.DarkGray;
+            chartArea1.AxisX2.TitleForeColor = System.Drawing.Color.DarkGray;
+            chartArea1.AxisY.LabelStyle.ForeColor = System.Drawing.Color.DarkGray;
+            chartArea1.AxisY.LineColor = System.Drawing.Color.DarkGray;
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.DarkGray;
+            chartArea1.AxisY.MajorTickMark.LineColor = System.Drawing.Color.DarkGray;
+            chartArea1.AxisY.MinorGrid.LineColor = System.Drawing.Color.DarkGray;
+            chartArea1.AxisY.MinorTickMark.LineColor = System.Drawing.Color.DarkGray;
+            chartArea1.AxisY.TitleForeColor = System.Drawing.Color.DarkGray;
+            chartArea1.AxisY2.LineColor = System.Drawing.Color.DarkGray;
+            chartArea1.AxisY2.TitleForeColor = System.Drawing.Color.DarkGray;
+            chartArea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            chartArea1.BorderColor = System.Drawing.Color.DarkGray;
+            chartArea1.Name = "ChartArea1";
+            this.chart.ChartAreas.Add(chartArea1);
             this.chart.Location = new System.Drawing.Point(-34, 137);
             this.chart.Name = "chart";
-            series3.BorderColor = System.Drawing.Color.DarkGray;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            series3.Name = "CPU";
-            series4.BorderColor = System.Drawing.Color.DarkGray;
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series4.Name = "RAM";
-            this.chart.Series.Add(series3);
-            this.chart.Series.Add(series4);
+            series1.BorderColor = System.Drawing.Color.DarkGray;
+            series1.BorderWidth = 2;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series1.Name = "CPU";
+            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            series1.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            series2.BorderColor = System.Drawing.Color.DarkGray;
+            series2.BorderWidth = 2;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square;
+            series2.Name = "RAM";
+            this.chart.Series.Add(series1);
+            this.chart.Series.Add(series2);
             this.chart.Size = new System.Drawing.Size(830, 250);
             this.chart.TabIndex = 8;
             this.chart.Text = "chart1";
@@ -213,7 +220,8 @@
             // 
             // Computer
             // 
-            this.Computer.Controls.Add(this.chart);
+            this.Computer.Controls.Add(this.metroLabel1);
+            this.Computer.Controls.Add(this.metroLabel2);
             this.Computer.Controls.Add(this.lbl_chart);
             this.Computer.Controls.Add(this.progressbar_ram);
             this.Computer.Controls.Add(this.progressbar_cpu);
@@ -221,9 +229,10 @@
             this.Computer.Controls.Add(this.lbl_percentualRAM);
             this.Computer.Controls.Add(this.lbl_ram);
             this.Computer.Controls.Add(this.lbl_percentualCPU);
+            this.Computer.Controls.Add(this.chart);
             this.Computer.HorizontalScrollbarBarColor = true;
             this.Computer.HorizontalScrollbarHighlightOnWheel = false;
-            this.Computer.HorizontalScrollbarSize = 10;
+            this.Computer.HorizontalScrollbarSize = 6;
             this.Computer.Location = new System.Drawing.Point(4, 38);
             this.Computer.Name = "Computer";
             this.Computer.Size = new System.Drawing.Size(762, 378);
@@ -233,14 +242,41 @@
             this.Computer.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Computer.VerticalScrollbarBarColor = true;
             this.Computer.VerticalScrollbarHighlightOnWheel = false;
-            this.Computer.VerticalScrollbarSize = 10;
+            this.Computer.VerticalScrollbarSize = 8;
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(140)))), ((int)(((byte)(240)))));
+            this.metroLabel1.Location = new System.Drawing.Point(660, 126);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(50, 20);
+            this.metroLabel1.Style = MetroFramework.MetroColorStyle.Teal;
+            this.metroLabel1.TabIndex = 9;
+            this.metroLabel1.Text = "CPU";
+            this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel1.UseCustomForeColor = true;
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel2.Location = new System.Drawing.Point(715, 126);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(50, 20);
+            this.metroLabel2.Style = MetroFramework.MetroColorStyle.Yellow;
+            this.metroLabel2.TabIndex = 10;
+            this.metroLabel2.Text = "RAM";
+            this.metroLabel2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel2.UseStyleColors = true;
             // 
             // AboutMe
             // 
             this.AboutMe.Controls.Add(this.lbl_copyright);
             this.AboutMe.HorizontalScrollbarBarColor = true;
             this.AboutMe.HorizontalScrollbarHighlightOnWheel = false;
-            this.AboutMe.HorizontalScrollbarSize = 10;
+            this.AboutMe.HorizontalScrollbarSize = 6;
             this.AboutMe.Location = new System.Drawing.Point(4, 38);
             this.AboutMe.Name = "AboutMe";
             this.AboutMe.Size = new System.Drawing.Size(762, 378);
@@ -250,7 +286,7 @@
             this.AboutMe.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.AboutMe.VerticalScrollbarBarColor = true;
             this.AboutMe.VerticalScrollbarHighlightOnWheel = false;
-            this.AboutMe.VerticalScrollbarSize = 10;
+            this.AboutMe.VerticalScrollbarSize = 8;
             // 
             // lbl_copyright
             // 
@@ -309,6 +345,8 @@
         private MetroFramework.Controls.MetroTabPage Computer;
         private MetroFramework.Controls.MetroTabPage AboutMe;
         private MetroFramework.Controls.MetroLabel lbl_copyright;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
     }
 }
 
