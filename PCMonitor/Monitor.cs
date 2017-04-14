@@ -10,8 +10,6 @@ using System.Windows.Forms;
 using MetroFramework;
 using MetroFramework.Animation;
 using MetroFramework.Forms;
-using LiveCharts;
-using LiveCharts.Wpf;
 
 namespace PCMonitor
 {
@@ -20,8 +18,6 @@ namespace PCMonitor
         public Monitor()
         {
             InitializeComponent();
-
-            
         }
 
         private void Monitor_Load(object sender, EventArgs e)
@@ -43,31 +39,6 @@ namespace PCMonitor
 
             chart.Series["CPU"].Points.AddY((int)pCPU.NextValue());
             chart.Series["RAM"].Points.AddY((int)pRAM.NextValue());
-            
-            /*cpbar_cpu.Value = (int)pCPU.NextValue(); //Processor...
-            cpbar_cpu.Text = string.Format("{0:0.00}%", progressbar_cpu.Value);
-
-            metroProgressSpinner1.Value = (int)pCPU.NextValue(); //Processor...*/
-
-            cartesi.Series = new LiveCharts.SeriesCollection
-            {
-                new LineSeries
-                {
-                    Title = "CPU",
-                    //Values = new ChartValues<double>{2, 8, 5, 79, 22, 189},
-                    Values = new ChartValues<int>{ (int)pCPU.NextValue() },
-                    PointGeometry = DefaultGeometries.Circle,
-                    PointGeometrySize = 10
-                },
-                new LineSeries
-                {
-                    Title = "RAM",
-                    //Values = new ChartValues<double>{2, 8, 5, 79, 22, 189},
-                    Values = new ChartValues<int>{ (int)pRAM.NextValue() },
-                    PointGeometry = DefaultGeometries.Circle,
-                    PointGeometrySize = 10
-                }
-            };
         }
     }
 }
